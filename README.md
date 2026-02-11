@@ -10,8 +10,9 @@ Prerequisites
 
 # 🧠 Core Logic
 The system is engineered with a hybrid architecture that combines two powerful methods:
-  Content-Based Filtering: This demonstration currently uses Cosine Similarity on book features (themes, categories, descriptions) to find books that are structurally   similar to the input book. This component helps solve the cold-start problem for new books.
+
+Content-Based Filtering: This demonstration currently uses Cosine Similarity on book features (themes, categories, descriptions) to find books that are structurally   similar to the input book. This component helps solve the cold-start problem for new books.
   
-  Collaborative Filtering: The full system integrates a SVD (Singular Value Decomposition) model, which predicts a user's rating based on the behavior and preferences   of thousands of other users.
+Collaborative Filtering: The full system integrates a SVD (Singular Value Decomposition) model, which predicts a user's rating based on the behavior and preferences   of thousands of other users.
 
 By combining these two methods, the final recommender will leverage both item metadata and user behavior for the most relevant suggestions. This technique helps to prevent crashes by keeping the internal data matrices small.
